@@ -1,0 +1,21 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sidebar-button {
+  padding: 0.5rem;
+  background-color: white;
+  text: #777;
+  border: 0px;
+  font-size: 1.1rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.sidebar-button:hover {
+  background-color: #eee;
+}

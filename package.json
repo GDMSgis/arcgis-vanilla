@@ -13,6 +13,8 @@
     "vite": "^5.4.10"
   },
   "dependencies": {
-    "@arcgis/core": "^4.31.6"
+    "@arcgis/core": "^4.31.6",
+    "@types/lodash": "^4.17.13",
+    "lodash": "^4.17.21"
   }
 }

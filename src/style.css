@@ -6,16 +6,82 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+body { margin: 0; padding: 0; }
+
+.sidebar {
+  width: 15%;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+  z-index: 1000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+}
+
 .sidebar-button {
   padding: 0.5rem;
   background-color: white;
   text: #777;
-  border: 0px;
+  border: none;
   font-size: 1.1rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+  cursor: pointer;
 }
 
 .sidebar-button:hover {
   background-color: #eee;
+}
+
+.context-menu {
+  position: absolute;
+  z-index: 1000;
+  background-color: white;
+  border: solid;
+  border-width: 1px;
+  border-color: lightgray;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.2), 0 4px 6px -4px rgb(0 0 0 / 0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.context-menu-button {
+  background-color: white;
+  padding: 0.25rem;
+  border: solid;
+  border-width: 1px;
+  border-color: white;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.context-menu-button:hover {
+  background-color: aliceblue;
+  border-color: skyblue;
+}
+
+.decay-button {
+  border: solid;
+  border-color: blue;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  padding: 0.5rem;
+  background: white;
+  color: blue;
+  cursor: pointer;
+}
+
+.decay-button:hover {
+  background: #eeeeee;
+}
+
+.decay-button:disabled {
+  background: blue;
+  color: white;
 }
